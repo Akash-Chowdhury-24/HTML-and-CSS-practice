@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>css positioning </title>
+
+    <style>
+        .header{
+            background-color: aqua;
+            height: 50px;
+            right: 0px;
+            left : 0px;
+            top: 0px;
+            position: fixed;
+            z-index: 100;
+        }
+        .side{
+            background-color: lightpink;
+            position: fixed;
+            top: 50px;
+            bottom: 0px;
+            left: 0px;
+        }
+        .work{
+            display: flex;
+            flex-direction: row;
+            margin-top: 80px;
+            margin-left: 90px;
+            column-gap: 25px;
+
+        }
+        .first{
+            background-color: lightgreen;
+            height: 200px;
+            width: 200px;
+            position: relative;
+        }
+        .second{
+            background-color: lightsalmon;
+            height: 200px;
+            width: 200px;
+        }
+        .time{
+            background-color: black; 
+            color: white;
+            font-size: small;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body style="height: 1000px;">
+    <div class="header">
+        Hearder
+    </div>
+    <div class="side">
+        side panel
+    </div>
+    <div class="work">
+        <div class="first"> 
+            div1
+            <div class="time">23:50</div> 
+        </div>
+        <div class="second"> div2 </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>header</title>
+        <style>
+            .header{
+                display: flex;
+                flex-direction: row;
+                height: 60px;
+                column-gap: 30px;
+                position: fixed;
+                top: 0px;
+                right: 0px;
+                left: 0px;
+            }
+            .left{
+                
+                display: flex;
+                align-items: center;
+            }
+            .middle{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex: 1;
+            }
+            .right{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                column-gap: 25px;
+                margin-right: 30px;
+                flex-shrink: 0px;
+                
+            }
+            .menu-icon{
+                width: 25px;
+                margin-left: 10px;
+                margin-right: 20px;
+            }
+            .youtube-icon{
+                width: 95px;
+            }
+            .search-icon{
+                width: 30px;
+            }
+            .mic-icon{
+                width: 30px;
+                background-color: rgb(246, 245, 245);
+                padding: 5px;
+                border-style: none;
+                border-radius: 20px;
+            }
+            .search{
+                flex:1;
+                width: 0px;
+                max-width: 350px;
+                height: 35px;
+                padding-left: 10px;
+                margin-left: 40px;
+                margin-right: -1px;
+            }
+            .search-icon{
+                background-color: rgb(240, 237, 237);
+                width: 25px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(133, 132, 132);
+                padding-left: 19px;
+                padding-right: 19px;
+                padding-top: 7.5px;
+                padding-bottom: 7.5px;
+                margin-right: 10px;
+            }
+            .upload,.notification,.apps{
+                width: 25px;
+            }
+            .channel{
+                width: 35px;
+            }
+        </style>
+    </head>
+    <body style=" height: 1000px">
+        <div class="header">
+            <div class="left">
+                <img class="menu-icon" src="imgs/hamburger-menu.svg">
+                <img class="youtube-icon" src="imgs/youtube-logo.svg">
+            </div>
+            <div class="middle">
+                <input class="search" type="text" placeholder="Search">
+                <img class="search-icon" src="imgs/search.svg">
+                <img class="mic-icon" src="imgs/voice-search-icon.svg">
+            </div>
+            <div class="right">
+                <img class="upload" src="imgs/upload.svg">
+                <img class="apps" src="imgs/youtube-apps.svg">
+                <img class="notification" src="imgs/notifications.svg">
+                <img class="channel" src="imgs/my-channel.jpeg">
+            </div>
+        </div>
+    </body>
+</html>
